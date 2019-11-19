@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main(){
@@ -33,13 +32,15 @@ int main(){
     }
     fclose(entrada);
 
-
+    // parte braba segue abaixo ksks
     for(i=0; i<tSeq; i++){
-        if(1);
+        int c=0;
+        while(seq[i+c]==ruido[c] && c<tRuido){
+            if(c==tRuido-1)
+                cout<<i<<endl;
+            c++;
+        }
     }
-
-    
-    
 
     free(seq);
     free(ruido);
